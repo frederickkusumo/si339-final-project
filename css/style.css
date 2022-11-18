@@ -1,0 +1,102 @@
+#logo{
+    width: 200px;
+}
+
+header, footer{
+    background-color: #ADD8E6;
+}
+
+header, .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font: bold 15px Verdana;
+}
+
+.nav a:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+  
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+body{
+    font: 15px Verdana;
+}
+
+.intro{
+    line-height: 1.5;
+    margin: auto;
+    max-width: 1000px;
+}
+
+#resort{
+    border-radius: 25px;
+    border: 10px solid gray;
+    margin-bottom: 25px;
+}
+
+#resorttext, #parktext, #highlights{
+    font: bold 25px Verdana;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.parks, .gallerycalifadv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .parks{ for web view
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    column-gap: 20px;
+} */
+
+#parkcastle, #pixar{
+    border-radius: 25px;
+    width: 600px;
+    height: 300px;
+}
+
+footer{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.gallerydisneyland{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1em;
+}
+
+
