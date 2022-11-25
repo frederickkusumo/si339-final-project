@@ -10,22 +10,17 @@ header, .nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-nav{
-    width: 60%;
-}
-
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font: bold 15px Verdana;
 }
 
 .nav a:hover{
     background-color: darkblue;
     color: white;
+}
+
+#nav_bar ul li.active{
+    border: 2px solid black;
+    padding: 5px;
 }
 
 a.skip{
@@ -45,20 +40,26 @@ a.skip:focus{
     text-decoration-style: solid;
 }
 
+a:link, a:visited{
+    color: black;
+    text-decoration: none; 
+}
+
 body{
     font: 15px Verdana;
 }
 
 .intro{
     line-height: 1.5;
-    margin: auto;
-    max-width: 1000px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #resort{
     border-radius: 25px;
     border: 10px solid gray;
-    margin-bottom: 25px;
+    display: block;
+    margin: 0 auto 20px auto
 }
 
 #resorttext, #parktext, #highlights{
@@ -67,24 +68,20 @@ body{
     padding-top: 50px;
 }
 
-.parks, .gallerycalifadv {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.parks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: gainsboro;
+    padding-top: 20px;
+    padding-left: 32px;
 }
 
-/* .parks{ for web view
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    justify-content: center;
-    column-gap: 20px;
-} */
-
-#parkcastle, #pixar{
-    border-radius: 25px;
-    width: 600px;
-    height: 300px;
+#parkcastle, #pixar, #disneylandimg{
+    width: 90%;
+    height: 90%;
 }
 
 footer{
@@ -95,8 +92,75 @@ footer{
 .gallerydisneyland{
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
     gap: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+.gallerycalifadv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 10px;
+}
 
+/* .gallerydisneyland:hover, .gallerycalifadv:hover{
+    transform: scale(0.5);
+} */
+
+#img{
+    background-color: gainsboro;
+    padding-top: 20px;
+    padding-left: 32px;
+    border-radius: 25px;
+} 
+
+.gallerycalifadv img{
+    width:500px;
+    height:250px;
+    padding-right: 32px;
+}
+
+@media screen and (min-width: 600px){
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav{
+        width: 80%;
+    }
+
+    .gallerydisneyland, .parks{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallerycalifadv img{
+        width:400px;
+        height:250px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    header, .nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+    }
+
+    nav{
+        width: 45%;
+    }
+
+    .gallerydisneyland{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallerycalifadv img{
+        width:340px;
+        height:190px;
+    }
+}
