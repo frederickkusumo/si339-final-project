@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
     <title>Disneyland Park</title>   
 </head>
 <body>
     <header>
         <a class = "skip" href="#main">Skip to Main Content</a>
-        <img src="img/logo.png" alt="logo" id = "logo">
+        <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
         <nav>
             <div id="nav_bar">
                 <ul class="nav">
@@ -32,39 +34,84 @@
         <h2 id="highlights">Highlights</h2>
         <div class="gallerydisneyland">
             <div class="adventureland-img" id="img">
-                <img id="disneylandimg" src="img/adventureland.jpg" alt="Adventureland">
+                <a href = "img/adventureland.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Adventureland" 
+                data-alt="Adventureland Area">
+                    <img id="disneylandimg" src="img/adventureland.jpg" alt="Adventureland">
+                </a>
                 <p>Adventureland</p>
             </div>
             <div class="bigthunder-img" id="img">
-                <img id="disneylandimg" src="img/bigthunder.jpg" alt="Big Thunder Mountain Railroad">
+                <a href = "img/bigthunder.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Big Thunder Mountain Railroad" 
+                data-alt="Big Thunder Mountain Railroad Ride">
+                    <img id="disneylandimg" src="img/bigthunder.jpg" alt="Big Thunder Mountain Railroad">
+                </a>
                 <p>Big Thunder Mountain Railroad</p>
             </div>
             <div class="castle-img" id="img">
-                <img id="disneylandimg" src="img/castle.jpg" alt="Sleeping Beauty Castle">
+                <a href = "img/castle.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Sleeping Beauty Castle" 
+                data-alt="Disneyland Park Castle">
+                    <img id="disneylandimg" src="img/castle.jpg" alt="Sleeping Beauty Castle">
+                </a>
                 <p>Sleeping Beauty Castle</p>
             </div>
             <div class="entrace-img" id="img">
-                <img id="disneylandimg" src="img/entrance.jpg" alt="Disneyland Park Entrance">
+                <a href = "img/entrance.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Park Entrance" 
+                data-alt="Disneyland Park Entrance">
+                    <img id="disneylandimg" src="img/entrance.jpg" alt="Disneyland Park Entrance">
+                </a>
                 <p>Disneyland Park Entrance</p>
             </div>
             <div class="fantasyland-img" id="img">
-                <img id="disneylandimg" src="img/fantasyland.jpg" alt="Fantasyland">
+                <a href = "img/fantasyland.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Fantasyland" 
+                data-alt="Fantasyland Area">
+                    <img id="disneylandimg" src="img/fantasyland.jpg" alt="Fantasyland">
+                </a>
                 <p>Fantasyland</p>
             </div>
             <div class="galaxysedge-img" id="img">
-                <img id="disneylandimg" src="img/galaxysedge.jpg" alt="Star Wars: Galaxy's Edge">
+                <a href = "img/galaxysedge.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Star Wars: Galaxy's Edge" 
+                data-alt="Galaxy's Edge">
+                    <img id="disneylandimg" src="img/galaxysedge.jpg" alt="Star Wars: Galaxy's Edge">
+                </a>
                 <p>Star Wars: Galaxy's Edge</p>
             </div>
             <div class="hauntedmansion-img" id="img">
-                <img id="disneylandimg" src="img/hauntedmansion.jpg" alt="Haunted Mansion">
+                <a href = "img/hauntedmansion.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Haunted Mansion" 
+                data-alt="Haunted Mansion Ride">
+                    <img id="disneylandimg" src="img/hauntedmansion.jpg" alt="Haunted Mansion">
+                </a>
                 <p>Haunted Mansion</p>
             </div>
             <div class="splash-img" id="img">
-                <img id="disneylandimg" src="img/splash.jpg" alt="Splash Mountain">
+                <a href = "img/splash.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Splash Mountain" 
+                data-alt="Splash Mountain Ride">
+                    <img id="disneylandimg" src="img/splash.jpg" alt="Splash Mountain">
+                </a>
                 <p>Splash Mountain</p>
             </div>
             <div class="spacemountain-img" id="img">
-                <img id="disneylandimg" src="img/spacemountain.jpg" alt="Space Mountain">
+                <a href = "img/spacemountain.jpg" target="_blank" 
+                data-lightbox="disneylandrides" 
+                data-title="Space Mountain" 
+                data-alt="Space Mountain Ride">
+                    <img id="disneylandimg" src="img/spacemountain.jpg" alt="Space Mountain">
+                </a>
                 <p>Space Mountain</p>
             </div>
         </div>
@@ -72,5 +119,12 @@
     <footer>
         <p>&copy; Frederick Kusumo 2022</p>
     </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 100,
+          'wrapAround': false
+        })
+    </script>
 </body>
 </html>

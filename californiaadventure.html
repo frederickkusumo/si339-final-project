@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
     <title>Disney California Adventure</title>   
 </head>
 <body>
     <header>
         <a class = "skip" href="#main">Skip to Main Content</a>
-        <img src="img/logo.png" alt="logo" id = "logo">
+        <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
         <nav>
             <div id="nav_bar">
                 <ul class="nav">
@@ -26,46 +28,91 @@
             <h1 id="resorttext">Disney California Adventure</h1>
             <p>The Walt Disney company would like vistors of the Disneyland Resort to spend more time in there than just having a one day trip. This is why they end up opening a park right across Disneyland Park
             and named it as Disney California Adventure. It was heavily California theme as they wanted visitors to be able to visit all corners of California by just visiting the park. However, a lot of visitors 
-            started giving bad reviews as the park was not up towards their expectation. Now, the park has changed a lot highlighting popular rides such as the Guardians of the Galaxy-Mission: Mission BREAKOUT! and
+            started giving bad reviews as the park was not up towards their expectation. Now, the park has changed a lot highlighting popular rides such as the Guardians of the Galaxy: Mission BREAKOUT! and
             Radiator Springs Racer rides.
             </p>
         </div>
         <h2 id="highlights">Highlights</h2>
         <div class="gallerycalifadv">
             <div class="avengerscampus-img" id="img">
-                <img id="califimg" src="img/avengerscampus.jpg" alt="Avengers Campus">
+                <a href = "img/avengerscampus.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Avengers Campus" 
+                data-alt="Avengers Campus Area">
+                    <img id="califimg" src="img/avengerscampus.jpg" alt="Avengers Campus">
+                </a>
                 <p>Avengers Campus</p>
             </div>
             <div class="califentrance-img" id="img">
-                <img id="califimg" src="img/califadventrance.jpg" alt="Disney California Adventure Entrance">
+                <a href = "img/califadventrance.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Park Entrance" 
+                data-alt="California Adventure Entrance">
+                    <img id="califimg" src="img/califadventrance.jpg" alt="Disney California Adventure Entrance">
+                </a>
                 <p>Disney California Adventure Entrance</p>
             </div>
             <div class="carsland-img" id="img">
-                <img id="califimg" src="img/carsland.jpg" alt="Cars Land">
+                <a href = "img/carsland.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Cars Land" 
+                data-alt="Cars Land Area">
+                    <img id="califimg" src="img/carsland.jpg" alt="Cars Land">
+                </a>
                 <p>Cars Land</p>
             </div>
             <div class="grizzly-img" id="img">
-                <img id="califimg" src="img/grizzlyriverrun.jpg" alt="Grizzly River Run">
+                <a href = "img/grizzlyriverrun.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Grizzly River Run" 
+                data-alt="Grizzly River Run Ride">
+                    <img id="califimg" src="img/grizzlyriverrun.jpg" alt="Grizzly River Run">
+                </a>
                 <p>Grizzly River Run</p>
             </div>
             <div class="galaxy-img" id="img">
-                <img id="califimg" src="img/guardiansride.jpg" alt="Galaxy-Mission: Mission BREAKOUT!">
-                <p>Galaxy-Mission: Mission BREAKOUT!</p>
+                <a href = "img/guardiansride.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Guardians of the Galaxy: Mission BREAKOUT!" 
+                data-alt="Guardians Ride">
+                    <img id="califimg" src="img/guardiansride.jpg" alt="Guardians">
+                </a>
+                <p>Guardians of the Galaxy</p>
             </div>
             <div class="hollywood-img" id="img">
-                <img id="califimg" src="img/hollywoodland.jpg" alt="Hollywood Land">
+                <a href = "img/hollywoodland.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Hollywood Land" 
+                data-alt="Hollywood Land Area">
+                    <img id="califimg" src="img/hollywoodland.jpg" alt="Hollywood Land">
+                </a>
                 <p>Hollywood Land</p>
             </div>
             <div class="pixar-img" id="img">
-                <img id="califimg" src="img/pixarpier.jpg" alt="Pixar Pier">
+                <a href = "img/pixarpier.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Pixar Pier" 
+                data-alt="Pixar Pier Area">
+                    <img id="califimg" src="img/pixarpier.jpg" alt="Pixar Pier">
+                </a>
                 <p>Pixar Pier</p>
             </div>
             <div class="racer-img" id="img">
-                <img id="califimg" src="img/radiatorspringsracer.jpg" alt="Radiator Springs Racer">
+                <a href = "img/radiatorspringsracer.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Radiator Springs Racer" 
+                data-alt="Radiator Springs Racer Ride">
+                    <img id="califimg" src="img/radiatorspringsracer.jpg" alt="Radiator Springs Racer">
+                </a>
                 <p>Radiator Springs Racer</p>
             </div>
             <div class="silly-img" id="img">
-                <img id="califimg" src="img/sillysymphonyswings.jpg" alt="Silly Symphony Swings">
+                <a href = "img/sillysymphonyswings.jpg" target="_blank" 
+                data-lightbox="califrides" 
+                data-title="Silly Symphony Swings" 
+                data-alt="Silly Symphony Swings Ride">
+                    <img id="califimg" src="img/sillysymphonyswings.jpg" alt="Silly Symphony Swings">
+                </a>
                 <p>Silly Symphony Swings</p>
             </div>
         </div>
@@ -73,5 +120,12 @@
     <footer>
         <p>&copy; Frederick Kusumo 2022</p>
     </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 100,
+          'wrapAround': false
+        })
+    </script>
 </body>
 </html>
