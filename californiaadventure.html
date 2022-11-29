@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/html5reset.css">
     <link href="dist/css/lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -12,7 +13,7 @@
 <body>
     <header>
         <a class = "skip" href="#main">Skip to Main Content</a>
-        <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+        <a href="index.html"><img src="img/logo.png" alt="logopic" id="logo"></a>
         <nav>
             <div id="nav_bar">
                 <ul class="nav">
@@ -34,84 +35,84 @@
         </div>
         <h2 id="highlights">Highlights</h2>
         <div class="gallerycalifadv">
-            <div class="avengerscampus-img" id="img">
+            <div class="img" id="avengerscampus-img">
                 <a href = "img/avengerscampus.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Avengers Campus" 
                 data-alt="Avengers Campus Area">
-                    <img id="califimg" src="img/avengerscampus.jpg" alt="Avengers Campus">
+                    <img src="img/avengerscampus.jpg" alt="Avengers Campus">
                 </a>
                 <p>Avengers Campus</p>
             </div>
-            <div class="califentrance-img" id="img">
+            <div class="img" id="califentrance-img">
                 <a href = "img/califadventrance.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Park Entrance" 
                 data-alt="California Adventure Entrance">
-                    <img id="califimg" src="img/califadventrance.jpg" alt="Disney California Adventure Entrance">
+                    <img src="img/califadventrance.jpg" alt="Disney California Adventure Entrance">
                 </a>
                 <p>Disney California Adventure Entrance</p>
             </div>
-            <div class="carsland-img" id="img">
+            <div class="img" id="carsland-img">
                 <a href = "img/carsland.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Cars Land" 
                 data-alt="Cars Land Area">
-                    <img id="califimg" src="img/carsland.jpg" alt="Cars Land">
+                    <img src="img/carsland.jpg" alt="Cars Land">
                 </a>
                 <p>Cars Land</p>
             </div>
-            <div class="grizzly-img" id="img">
+            <div class="img" id="grizzly-img">
                 <a href = "img/grizzlyriverrun.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Grizzly River Run" 
                 data-alt="Grizzly River Run Ride">
-                    <img id="califimg" src="img/grizzlyriverrun.jpg" alt="Grizzly River Run">
+                    <img src="img/grizzlyriverrun.jpg" alt="Grizzly River Run">
                 </a>
                 <p>Grizzly River Run</p>
             </div>
-            <div class="galaxy-img" id="img">
+            <div class="img" id="galaxy-img">
                 <a href = "img/guardiansride.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Guardians of the Galaxy: Mission BREAKOUT!" 
                 data-alt="Guardians Ride">
-                    <img id="califimg" src="img/guardiansride.jpg" alt="Guardians">
+                    <img src="img/guardiansride.jpg" alt="Guardians">
                 </a>
                 <p>Guardians of the Galaxy</p>
             </div>
-            <div class="hollywood-img" id="img">
+            <div class="img" id="hollywood-img">
                 <a href = "img/hollywoodland.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Hollywood Land" 
                 data-alt="Hollywood Land Area">
-                    <img id="califimg" src="img/hollywoodland.jpg" alt="Hollywood Land">
+                    <img src="img/hollywoodland.jpg" alt="Hollywood Land">
                 </a>
                 <p>Hollywood Land</p>
             </div>
-            <div class="pixar-img" id="img">
+            <div class="img" id="pixar-img">
                 <a href = "img/pixarpier.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Pixar Pier" 
                 data-alt="Pixar Pier Area">
-                    <img id="califimg" src="img/pixarpier.jpg" alt="Pixar Pier">
+                    <img src="img/pixarpier.jpg" alt="Pixar Pier">
                 </a>
                 <p>Pixar Pier</p>
             </div>
-            <div class="racer-img" id="img">
+            <div class="img" id="racer-img">
                 <a href = "img/radiatorspringsracer.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Radiator Springs Racer" 
                 data-alt="Radiator Springs Racer Ride">
-                    <img id="califimg" src="img/radiatorspringsracer.jpg" alt="Radiator Springs Racer">
+                    <img src="img/radiatorspringsracer.jpg" alt="Radiator Springs Racer">
                 </a>
                 <p>Radiator Springs Racer</p>
             </div>
-            <div class="silly-img" id="img">
+            <div class="img" id="silly-img">
                 <a href = "img/sillysymphonyswings.jpg" target="_blank" 
                 data-lightbox="califrides" 
                 data-title="Silly Symphony Swings" 
                 data-alt="Silly Symphony Swings Ride">
-                    <img id="califimg" src="img/sillysymphonyswings.jpg" alt="Silly Symphony Swings">
+                    <img src="img/sillysymphonyswings.jpg" alt="Silly Symphony Swings">
                 </a>
                 <p>Silly Symphony Swings</p>
             </div>
@@ -123,7 +124,9 @@
     <script src="dist/js/lightbox-plus-jquery.js"></script>
     <script>
         lightbox.option({
-          'resizeDuration': 100,
+          'resizeDuration': 0,
+          'fadeDuration': 0,
+          'imageFadeDuration': 0,
           'wrapAround': false
         })
     </script>
